@@ -1,24 +1,5 @@
-# README
+# Time To Answer
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este repositorio e destinado para a realizacao de um projeto pratico, proposto no curso de Ruby on Rails:  [https://www.udemy.com/course/rubyonrails-5x](https://www.udemy.com/course/rubyonrails-5x/?couponCode=24T1MT310325G3)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+O curso usa a versão 5 do rails, então foram feitas Diversas mudanças para ajustar o projeto para a versão 8.0 do rails.
