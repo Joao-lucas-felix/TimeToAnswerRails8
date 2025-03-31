@@ -23,8 +23,20 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
+    <main class="container mx-auto mt-12 lg:mt-28 px-5 lg:flex items-center">
+        <div class="flex mx-auto">
+          <h1 
+            class="
+                mx-auto 
+                font-serif 
+                text-4xl 
+                text-blue-950
+                hover:text-blue-600 
+                hover:underline">
+                <%= link_to 'Time To Answer', root_path %>
+          </h1>
+        </div>
+      <section class="mx-auto"><%= yield %></section>
     </main>
   </body>
 </html>
