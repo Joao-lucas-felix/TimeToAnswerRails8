@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
+  namespace :users_back_office do
+    get "welcome/index"
+  end
+  namespace :admins_back_office do
+    get "welcome/index"
+  end
   devise_for :users
   devise_for :admins
-  
+
   namespace :site do
     get "welcome/index"
   end

@@ -24,15 +24,16 @@
 
   <body class="">
      <div class="
-     p-2.5
-     grid rows-2
+     grid 
      container mx-auto w-full  
      items-center
      mb-3
+     mt-12
      ">
             <h1 
             class="
                 mx-auto 
+              
                 font-serif 
                 text-4xl 
                 text-blue-950
@@ -40,9 +41,9 @@
                 hover:underline">
                 <%= link_to 'Time To Answer', root_path %>
             </h1>
-            <nav class="mx-auto">
+            <nav class="mx-auto mt-3">
                 <ul class="flex gap-3">
-                    <%# unless user_signed_in?  %>
+                    <% unless user_signed_in?  %>
                     <li
                     class="
                      text-base
@@ -51,7 +52,7 @@
                      hover:text-blue-400
                      hover:underline
                     "
-                    ><%= link_to 'Login', '#' %></li>
+                    ><%= link_to 'Login', new_user_session_path %></li>
                     <li
                     class="
                      text-base
@@ -60,8 +61,8 @@
                      hover:text-blue-400
                      hover:underline
                     "
-                    ><%= link_to 'Sing UP', '#' %></li>
-                    <%# else %>
+                    ><%= link_to 'Sing UP', new_user_registration_path %></li>
+                    <% else %>
                     <li
                     class="
                      text-base
@@ -78,14 +79,14 @@
                      hover:text-blue-400
                      hover:underline"
                      > 
-                        <%= link_to 'Logout', '#', data: {turbo_method: :delete} %>
+                        <%= link_to 'Logout', destroy_user_session_path, data: {turbo_method: :delete} %>
                     </li>
                     
-                    <%# end %>
+                    <% end %>
                 </ul>
             </nav>
 
-        <p style="color: green">
+        <p style="color: green", class="text-center p-5">
             <%= notice %>
         </p>
     </div>
