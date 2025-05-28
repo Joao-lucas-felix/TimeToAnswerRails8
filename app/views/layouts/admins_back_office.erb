@@ -22,23 +22,33 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <main class="container mx-auto mt-12 lg:mt-28 px-5 lg:flex items-center">
-        <div class="flex mx-auto">
-          <h1 
+  <body class="">
+     <div class="
+     grid 
+     container mx-auto w-full  
+     items-center
+     mb-3
+     mt-12
+     ">
+            <h1 
             class="
                 mx-auto 
+              
                 font-serif 
                 text-4xl 
                 text-blue-950
                 hover:text-blue-600 
                 hover:underline">
                 <%= link_to 'Time To Answer', root_path %>
-          </h1>
-        </div>
+            </h1>
+        <p style="color: green", class="text-center p-5">
+            <%= notice %>
+        </p>
+    </div>
+    <main class="container mx-auto p-5 flex">
+    
       <section class="mx-auto">
-          <div class="text-center"><%= notice %></div>
-          <%= yield %>
+        <%= yield %>
       </section>
     </main>
   </body>
